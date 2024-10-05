@@ -17,7 +17,7 @@ public class FaceScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && isAlive)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.touchCount > 0) && isAlive)
         {
             myRigidbody.velocity = Vector2.up * flapStrength;
         }
