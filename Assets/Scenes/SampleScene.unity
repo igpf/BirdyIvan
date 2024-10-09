@@ -388,6 +388,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199798124}
   m_CullTransparentMesh: 1
+--- !u!1 &237692313
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 237692315}
+  - component: {fileID: 237692314}
+  m_Layer: 0
+  m_Name: LeaderboardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &237692314
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237692313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af8506bb6f1a8224b8efdd276879fd00, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &237692315
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 237692313}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &281557868
 GameObject:
   m_ObjectHideFlags: 0
@@ -956,6 +1000,7 @@ MonoBehaviour:
   hiScore: 0
   gameOverScreen: {fileID: 856122813}
   scoreText: {fileID: 1909101578}
+  scoreInfo: {fileID: 1805888196}
   dingSFX: {fileID: 900302329}
   gameMusic: {fileID: 900302330}
   highScoreText: {fileID: 522355205}
@@ -1572,8 +1617,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 660.0554, y: 439.32373}
-  m_SizeDelta: {x: 570.8893, y: 179.3726}
+  m_AnchoredPosition: {x: 561.49585, y: 439.32373}
+  m_SizeDelta: {x: 768.0084, y: 179.3726}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1805888196
 MonoBehaviour:
@@ -1597,7 +1642,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: e89bcd69e29862048a7c080b7766d04c, type: 3}
-    m_FontSize: 100
+    m_FontSize: 91
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 1
@@ -1608,7 +1653,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: HighScore
+  m_Text: HARD HighScore
 --- !u!222 &1805888197
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1957,3 +2002,4 @@ SceneRoots:
   - {fileID: 1920725716}
   - {fileID: 900302328}
   - {fileID: 1901544182}
+  - {fileID: 237692315}

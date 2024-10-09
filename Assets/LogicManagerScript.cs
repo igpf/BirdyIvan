@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Globalization;
 
 public class LogicManagerScript : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class LogicManagerScript : MonoBehaviour
     public GameObject gameOverScreen;
     //public GameObject startGameScreen;
     public Text scoreText;
+    public Text scoreInfo;
     public AudioSource dingSFX;
     public AudioSource gameMusic;
     public Text highScoreText;
@@ -20,7 +22,17 @@ public class LogicManagerScript : MonoBehaviour
     void Start()
     {
         gameMusic.Play();
-        hiScore = PlayerPrefs.GetInt("HighScore", 0);
+        if (difficultyHard)
+        {
+            hiScore = PlayerPrefs.GetInt("HighScore-HARD", 0);
+            scoreInfo.text = "hard highscore";
+        }
+        else
+        {
+            hiScore = PlayerPrefs.GetInt("HighScore", 0);
+            scoreInfo.text = "easy highscore";
+        }
+
         highScoreText.text = hiScore.ToString();
     }
 
@@ -59,10 +71,20 @@ public class LogicManagerScript : MonoBehaviour
         if (playerScore > hiScore)
         {
             hiScore = playerScore;
-            PlayerPrefs.SetInt("HighScore", hiScore);
+            if (difficultyHard)
+            {
+                PlayerPrefs.SetInt("HighScore-HARD", hiScore);
+            }
+            else
+            {
+                PlayerPrefs.SetInt("HighScore", hiScore);
+            }
+
             highScoreText.text = hiScore.ToString();
             PlayerPrefs.Save();
         }
     }
+
+
 
 }
