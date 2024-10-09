@@ -31,7 +31,11 @@ public class FaceScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        stopGame();
+        if (LogicManagerScript.difficultyHard)
+        {
+            stopGame();
+        }
+
     }
 
     void stopGame()

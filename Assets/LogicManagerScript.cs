@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class LogicManagerScript : MonoBehaviour
 {
     public int playerScore;
+    public static bool difficultyHard = true;
     public int hiScore;
     public GameObject gameOverScreen;
     //public GameObject startGameScreen;
@@ -60,6 +61,8 @@ public class LogicManagerScript : MonoBehaviour
             hiScore = playerScore;
             PlayerPrefs.SetInt("HighScore", hiScore);
             highScoreText.text = hiScore.ToString();
+            PlayerPrefs.Save();
         }
     }
+
 }
