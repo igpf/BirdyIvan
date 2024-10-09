@@ -1,4 +1,0 @@
-repository "BirdyIvan@igpf@cloud"
-  path "/"
-    br "/main"
-    co "/main"
