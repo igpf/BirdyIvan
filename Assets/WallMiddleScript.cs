@@ -19,7 +19,7 @@ public class WallMiddleScript : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.layer == 3)
+        if (collision.gameObject.layer == 0)
         {
             logic.addScore(1);
         }
