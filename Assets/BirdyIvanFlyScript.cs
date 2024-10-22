@@ -67,6 +67,7 @@ public class BirdyIvanFlyScript : MonoBehaviour
 
     void stopGame()
     {
+        OnDisable();
         logic.gameOver();
         isAlive = false;
     }
