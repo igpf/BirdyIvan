@@ -2,6 +2,8 @@
 
 **BirdyIvan** is a hobbyist automation and analytics project exploring data collection, tracking, or behavior modeling—built to test out .NET capabilities and integrate backend logic with flexible UI components. It serves as a personal sandbox for experimenting with automation, scheduling, and potentially hardware-driven interactions.
 
+In summary, its a flappy bird knockoff created in Unity.  
+
 ---
 
 ## 📌 Project Goals
