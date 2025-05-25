@@ -18,11 +18,11 @@
 | Layer       | Tools / Frameworks              |
 |------------|----------------------------------|
 | Language    | C# (.NET 8)                     |
-| Backend     | ASP.NET Core Console App        |
+| Backend     | ASP.NET Core Console App, Unity |
 | Automation  | Task Scheduler, Timers          |
 | Data Access | Dapper, SQLite (or in-memory DB)|
 | Logging     | Serilog or native logging       |
-| Tooling     | Visual Studio 2022              |
+| Tooling     | Unity / Visual Studio 2022      |
 
 ---
 
@@ -31,6 +31,7 @@
 ### Prerequisites
 - [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download)
 - Visual Studio or VS Code
+- Unity (https://unity.com/)
 
 ### Run the Project
 
@@ -39,8 +40,5 @@
 git clone https://github.com/igpf/BirdyIvan.git
 cd BirdyIvan
 
-# Restore dependencies
-dotnet restore
-
 # Run
-dotnet run
+unity
